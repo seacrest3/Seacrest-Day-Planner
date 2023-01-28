@@ -3,7 +3,7 @@ A web application which allows a user to save events for each hour of the day.
 
 ## Description
 
-It is tasked to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. The [Moment.js](https://momentjs.com/) library will be used to work with date and time.
+It is tasked to create a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. The [Moment.js](https://momentjs.com/) library will be used to work with date and time.
 
 ### User Story
 
