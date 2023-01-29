@@ -46,6 +46,19 @@ function renderPlanner() {
         $(blockRow).append(eventEnter);
         $(blockRow).append(blockBtn);
         $(blockBtn).append(saveIcon);
+
+        // Color-code each timeblock based on past, present, and future when the planner is viewed.
+        let timeBlockHour = moment(timeSlots[i], 'hA').hour();
+
+        if (timeBlockHour > currentHour) {
+            eventEnter.addClass('future');
+        }
+        else if (timeBlockHour === currentHour) {
+            eventEnter.addClass('present');
+        }
+        else {
+            eventEnter.addClass('past');
+        }
     }
 }
 
