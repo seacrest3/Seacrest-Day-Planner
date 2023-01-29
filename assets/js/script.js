@@ -47,6 +47,13 @@ function renderPlanner() {
         $(blockRow).append(blockBtn);
         $(blockBtn).append(saveIcon);
 
+        //Overide white text colour with black colour when entering an event
+        $(document).ready(function () {
+            $('.future').css('color', '#000000');
+            $('.present').css('color', '#000000');
+            $('.past').css('color', '#000000');
+        });
+
         // Color-code each timeblock based on past, present, and future when the planner is viewed.
         let timeBlockHour = moment(timeSlots[i], 'hA').hour();
 
