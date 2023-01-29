@@ -69,4 +69,15 @@ function renderPlanner() {
     }
 }
 
+//Retrieve saved events from local storage
+function retrieveEvents() {
+    for (let i = 0; i < timeSlots.length; i++) {
+        let eventItem = localStorage.getItem(timeSlots[i])
+        if (eventItem) {
+            $('#' + (i + 9)).val(eventItem);
+        }
+    }
+}
+
 renderPlanner();
+retrieveEvents();
