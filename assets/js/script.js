@@ -23,19 +23,20 @@ function renderPlanner() {
         const eventEnter = $('<textarea>');
         eventEnter.attr('class', 'col-10 description');
         eventEnter.attr('id', i + 9);
-        eventEnter.val(' ');
+        eventEnter.val('');
 
         const blockBtn = $('<button>');
         blockBtn.attr('class', 'col-1 saveBtn');
         blockBtn.attr('type', 'button');
 
         blockBtn.on('click', function () {
-            //Get the hour of the timeblock
+            //Get hour of the timeblock
             let eventHour = $(this).siblings().first().text();
-            //Get the event of the timeblock
+            //Get event of the timeblock
             let event = $(this).siblings().last().val();
-            //Save event into local storage
+            //Save event and date into local storage
             localStorage.setItem(eventHour, event);
+            localStorage.setItem('day', currentDay);
         });
         // Add the save icon to each timeblock
         const saveIcon = $('<i>');
@@ -72,8 +73,11 @@ function renderPlanner() {
 //Retrieve saved events from local storage
 function retrieveEvents() {
     for (let i = 0; i < timeSlots.length; i++) {
-        let eventItem = localStorage.getItem(timeSlots[i])
-        if (eventItem) {
+        let eventItem = localStorage.getItem(timeSlots[i]);
+        let eventDay = localStorage.getItem('day');
+        if (currentDay > eventDay) {
+            localStorage.clear();
+        } else if (eventItem) {
             $('#' + (i + 9)).val(eventItem);
         }
     }
