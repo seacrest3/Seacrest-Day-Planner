@@ -58,6 +58,8 @@ TA, a Web Developer, reviews the code, providing feedback on errors and making s
 
 - [Moment](https://momentjs.com/)
 
+- [jQuery](https://jquery.com/)
+
 - [jQuery UI](https://jqueryui.com/)
 
 - [Bootstrap](https://getbootstrap.com)

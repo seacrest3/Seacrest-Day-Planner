@@ -38,10 +38,11 @@ function renderPlanner() {
             localStorage.setItem(eventHour, event);
             localStorage.setItem('day', currentDay);
         });
-        // Add the save icon to each timeblock
+        // Add save icon to each timeblock
         const saveIcon = $('<i>');
         saveIcon.attr('class', 'fas fa-save');
-
+        
+        //Build up the structure of the planner
         $(containerEl).append(blockRow);
         $(blockRow).append(blockHour);
         $(blockRow).append(eventEnter);
