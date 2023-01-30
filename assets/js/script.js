@@ -49,7 +49,7 @@ function renderPlanner() {
         $(blockRow).append(blockBtn);
         $(blockBtn).append(saveIcon);
 
-        //Overide white text colour with black colour when entering an event
+        //Dynamically override the white text colour used in CSS with black colour when entering an event
         $(document).ready(function () {
             $('.future').css('color', '#000000');
             $('.present').css('color', '#000000');
