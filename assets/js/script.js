@@ -26,7 +26,7 @@ function renderPlanner() {
         eventEnter.attr('class', 'col-10 description');
         eventEnter.attr('id', i + 9);
         eventEnter.val('');
-        
+
         // Create save icon and onclick function to save event into local storage
         const blockBtn = $('<div>');
         blockBtn.attr('class', 'col-1 saveBtn');
@@ -41,23 +41,23 @@ function renderPlanner() {
             localStorage.setItem(eventHour, event);
             localStorage.setItem('day', currentDay);
         });
-        
+
         // Build up the structure of the planner
         $(containerEl).append(blockRow);
         $(blockRow).append(blockHour);
         $(blockRow).append(eventEnter);
         $(blockRow).append(blockBtn);
         $(blockBtn).append(saveIcon);
-        
+
         // Position save icons
-        $('i').css('margin-top','30px');
+        $('i').css('margin-top', '30px');
 
         // Add mouseover, mouseout and color change effects to save icons
-        $('i').mouseover(function() {
-            $(this).css('color','black');
+        $('i').mouseover(function () {
+            $(this).css('color', 'black');
         });
-        $('i').mouseout(function() {
-            $(this).css('color','white');
+        $('i').mouseout(function () {
+            $(this).css('color', 'white');
         });
 
         // Input event in black colour charracters
