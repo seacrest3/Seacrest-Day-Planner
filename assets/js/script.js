@@ -52,7 +52,7 @@ function renderPlanner() {
         // Position save icons
         $('i').css('margin-top','30px');
 
-        // Add mouseover and color change effects to save icons
+        // Add mouseover, mouseout and color change effects to save icons
         $('i').mouseover(function() {
             $(this).css('color','black');
         });
