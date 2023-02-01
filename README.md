@@ -50,9 +50,9 @@ When a user opens the app,
 
 TA, a Web Developer, reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met.
 
-* [The URL of the deployed application.](https://seacrest3.github.io/Work-Day-Scheduler/)
+* [The URL of the deployed application.](https://seacrest3.github.io/Seacrest-Day-Planner/)
 
-* [The URL of the GitHub repository.](https://github.com/seacrest3/Work-Day-Scheduler.git)
+* [The URL of the GitHub repository.](https://github.com/seacrest3/Seacrest-Day-Planner.git)
 
 ### Helpful Resources
 
